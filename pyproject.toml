@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "si-chat"
+version = "0.1.0"
+description = ""
+authors = ["pakhapoom <pakhapoom.sar@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.scraping.dependencies]
+webdriver-manager = "4.0.1"
+selenium = "4.18.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
